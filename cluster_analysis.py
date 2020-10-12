@@ -10,7 +10,7 @@
 # Usage:
 # This program is a standalone program to calculate clusters using an
 # aglomerative cluster single-linkage algorithm. All atoms inside every
-# molecule are considered to determine meighbor molecules.
+# molecule are considered to determine neighbor molecules.
 # Please use python cluster_analysis.py --help for usage information.
 # Please be sure to read carefully all the help info and comments to clear any
 # doubts.
