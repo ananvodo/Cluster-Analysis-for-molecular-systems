@@ -20,10 +20,14 @@ e) '-b' is the initial simulation time corresponding to the first GRO file (i.e.
 
 f) '-e' is the final simulation time corresponding to the last GRO file (i.e., sys1000.gro) in ns.
 
+g) '-o' is an output excel file that has all the geometry description parameters per frame.
+
 
 This program uses multiprocessing, meaning that multiple GRO files are analyzed at the same time.
 Moreover, this program is intended to analyze water-oils systems and clusters created by bio-proteins. The default oils used are BENZ and DEC (according to martiniFF topology name), but they can be replaced by any other oil that wants to be used. Please consider that BENZ and DEC consist of only three beads. The number of beads must be according to the oil/molecule used. Please refer to lines 316 and 325-432.
 NOTE: No itp file is required for the oil, only for the protein (in my case). If oil itp is required, then changes to the code must be done.
+
+Please make sure you have all the required libraries!
 
 
 
