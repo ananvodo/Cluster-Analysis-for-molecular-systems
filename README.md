@@ -1,5 +1,5 @@
 # Geometry Description parameters using Cluster Analysis single linkage algorithm for MD simulations in GMX
-(for python 3.x)
+(for python 3.4 or higher)
 
 This is a program to determine clusters created by molecules in multiple molecular dynamics system. It calculates the Gyration Tensor to calculate geometry description parameters: Shape Description, Asphericity, Acylindricity, Radius of Gyration, and cluster mass content.
 The calculation of the geometry description parameters are according to the publication: xxxx
