@@ -8,6 +8,7 @@ This program is compatible with GROMACS itp format for molecular topologies.
 It is compatible with argparse. For more information run: python cluster_analysis.py -h
 
 The inputs are the following:
+
 a) '-g' GRO file. It must comply with gromacs GRO format. If no -g is passed, the program will read all the gro files inside the workdir. This program aims to understand the evolution and geometry description parameters of clusters according to simulation time. Therefore, the GRO files must be consecutive in time. As example, sys1.gro, sys2.gro, sys3.gro, sys1000.gro; where sys1.gro is the frame of the simulation's initial time, and sys1000.gro is the last sim time frame.
 
 b) '-m' is the itp file. It must comply with gromacs GRO format. If no -p is passed, the program will read martini_v2.2P.itp (as the default topology file when using martiniFF). This file is ONLY used to calculate mass% of the molecules in the cluster. In case other FF files want to be used, few changes must be done to the -m option in the code or eliminate the respected lines if %mass content is not needed.
