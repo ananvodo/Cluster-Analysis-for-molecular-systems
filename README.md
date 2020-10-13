@@ -2,7 +2,8 @@
 (for python 3.4 or higher)
 
 This is a program to determine clusters created by molecules in multiple molecular dynamics system. It calculates the Gyration Tensor to calculate geometry description parameters: Shape Description, Asphericity, Acylindricity, Radius of Gyration, and cluster mass content.
-The calculation of the geometry description parameters are according to the publication: xxxx
+
+The calculation of the geometry description parameters are according to the publication: "Shape of Unperturbed Linear Polymers: Polypropylene" by Doros N. Theodorou and Ulrich W. Suter
 
 This program is compatible with GROMACS itp format for molecular topologies.
 It is compatible with argparse. For more information run: python cluster_analysis.py -h
