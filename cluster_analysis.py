@@ -1237,9 +1237,8 @@ dataframeList = []
 # ----------------------------------------------------------------------------
 
 try:
-    if not clusterPath:
-        raise FileNotFoundError('{} did not found in path {}'.format(
-            clusterFolder, cwd))
+    if not os.path.isdir(clusterPath):
+        os.mkdir(clusterPath)
 
     os.chdir(clusterPath)
     print('\n\nThe gro files to use are: \n')
