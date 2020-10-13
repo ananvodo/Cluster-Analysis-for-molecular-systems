@@ -24,7 +24,7 @@ f) '-e' is the final simulation time corresponding to the last GRO file (i.e., s
 
 g) '-o' is an output excel file that has all the geometry description parameters per frame.
 
-h) There must be a folder inside the workdir with the name "cluster_analysis". All the plots and excel file will be saved inside this folder. If this folder does not exist, then an error will occur.
+h) There must be a folder inside the workdir with the name "cluster_analysis". All the plots and excel file will be saved inside this folder. If this folder does not exist, then it will be created.
 
 
 This program uses multiprocessing, meaning that multiple GRO files are analyzed at the same time.
