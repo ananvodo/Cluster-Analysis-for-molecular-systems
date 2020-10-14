@@ -27,7 +27,7 @@ g) '-o' is an output excel file that has all the geometry description parameters
 h) There must be a folder inside the workdir with the name "cluster_analysis". All the plots and excel file will be saved inside this folder. If this folder does not exist, then it will be created.
 
 
-This program uses multiprocessing, meaning that multiple GRO files are analyzed at the same time. Regards the multiprocessing coding, all credit goes to Corey Shafer (https://www.youtube.com/watch?v=fKl2JW_qrso&t=1817s&ab_channel=CoreySchafer).
+This program uses multiprocessing, meaning that multiple GRO files are analyzed at the same time. Regards the multiprocessing coding, all credit goes to Corey Schafer (https://www.youtube.com/watch?v=fKl2JW_qrso&t=1817s&ab_channel=CoreySchafer).
 
 Moreover, this program is intended to analyze water-oils systems and clusters created by bio-proteins. The default oils used are BENZ and DEC (according to martiniFF topology name), but they can be replaced by any other oil that wants to be used. Please consider that BENZ and DEC consist of only three beads. The number of beads must be according to the oil/molecule used. Please refer to lines 316 and 325-432.
 
