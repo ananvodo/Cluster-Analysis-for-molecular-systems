@@ -587,7 +587,7 @@ class ClusterAnalysis:
                         # We will do this until cluster[j] is the last element to compare with cluster[0]
 
                 new_cluster.append(cluster[0]) # Save the unique cluster[0]. All its molecs are not in cluster list
-                cluster.remove(cluster[0]) # cluster[0] elements are in a unique new cluster.
+                cluster.pop(0) # cluster[0] elements are in a unique new cluster.
                                             # We remove it from cluster list to start a new analysis.
 
         print('''\nGetting the molecules not in a clusters in the dictionary
