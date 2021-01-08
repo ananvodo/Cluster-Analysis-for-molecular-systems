@@ -459,7 +459,7 @@ class ClusterAnalysis:
         the dictionary provided.
         The dictionary must contain:
             key = is the the molecule name. It must be a str.
-            [atomnum, x, y, z] = it is a list of x, y, and z coordinates.
+            [atomnum, x, y, z] = it is a list of atom_numbers, x, y, and z coordinates.
                         X, y, and z must be numpy arrays.
         '''
         # Verifying the input format is correct
