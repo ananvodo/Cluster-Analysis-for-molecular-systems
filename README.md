@@ -1,6 +1,11 @@
 # Geometry Description parameters using Cluster Analysis single linkage algorithm for MD simulations in GMX
 (for python 3.4 or higher)
 
+@Author: Andres Vodopivec
+
+@Date: 2020-02-01
+
+
 This is a program to determine clusters created by molecules in multiple molecular dynamics system. It calculates the Gyration Tensor to calculate geometry description parameters: Shape Description, Asphericity, Acylindricity, Radius of Gyration, and cluster mass content.
 
 The calculation of the geometry description parameters are according to the publication: "Shape of Unperturbed Linear Polymers: Polypropylene" by Doros N. Theodorou and Ulrich W. Suter
@@ -36,5 +41,5 @@ NOTE: No itp file is required for the oil, only for the protein (in my case). If
 Please make sure you have all the required libraries!
 
 
-
+#### Please feel free to use this program. If you find anything useful in this program or decide to use it for your research, please fork it, click on the star, and add it in your references or citations.
 
