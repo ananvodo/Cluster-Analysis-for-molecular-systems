@@ -593,8 +593,10 @@ class ClusterAnalysis:
         print('''\nGetting the molecules not in a clusters in the dictionary
               provided in ClusterAnalysis.fit\n''')
 
-        flatten_new_cluster = functools.reduce(operator.iconcat, new_cluster, [])
-        no_cluster = list(set(flatten_new_cluster).symmetric_difference(molecs_list))
+        # Getting the molecules are not part of any cluster
+        flatten_new_cluster = functools.reduce(operator.iconcat, new_cluster, []) # just flattening the new_cluster list
+        no_cluster = list(set(flatten_new_cluster).symmetric_difference(molecs_list)) # Getting the difference between the new_cluster and all molecules 
+                                                                                      #in the original list to get the molecules that are not present in any cluster
 
         # Creating the cluster dictionary
         clusters = {}
@@ -1132,7 +1134,7 @@ def run_all_script(a_groFileName):
 
     groCA = ClusterAnalysis(xBoxLen, yBoxLen, zBoxLen, length=cutoff)
     groCA.fit(allMolecDict)
-    del(allMolecDict)
+    del(allMolecDict) # not needed. It is inside the groCA object
     groCA.GetCentroids()
     groCA.GetGeometryDescriptionParams()
 
@@ -1145,7 +1147,7 @@ def run_all_script(a_groFileName):
                   groCA.eigenvalues3, groCA.shapeDescrip, groCA.rog,
                   groCA.asphericity, groCA.acylindricity,
                   groCA.mass_percent, groCA.molecPerCluster]
-    del(groCA) # freeing memory becuase the info needed is already in the list
+    del(groCA) # freeing memory becuase the info needed is already in the variables list
 
     data = pd.DataFrame([])
     for var in variables:
@@ -1157,7 +1159,6 @@ def run_all_script(a_groFileName):
         data = pd.concat([data, df], sort=False)
 
     data.drop('no_cluster', axis=1, inplace=True)
-    # data['Mean_values'] = data.mean(axis=1)
 
     return data
 
